@@ -1,0 +1,1324 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  padding-top: 20px;
+  overflow: auto;
+}
+
+.backgroundImage {
+  position: absolute; /* Position the image as a background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container  */
+  z-index: -1; /* Puts the image behind other content */
+}
+/* Top Navigation Styles */
+.topNavContainer {
+  display: flex;
+  justify-content: space-between;
+  color: #212832;
+  font-weight: 550;
+  padding: 0px 120px;
+}
+
+.topNav {
+  display: flex;
+  width: 65%;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.topNav > div {
+  padding: 5px;
+}
+
+.imgContainer {
+  display: flex;
+}
+
+.mobTopNav {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 4px;
+  background-color: #212832;
+  transition: 0.3s;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.sidebarLinks {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebarLink {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+}
+.mobTopNav {
+  display: none;
+}
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #212832;
+  cursor: pointer;
+}
+
+/* hero css starts here */
+.heroContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 120px;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.heroTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #df6951;
+}
+
+.heroTextImg {
+  margin-top: 20px;
+}
+
+.heroDescription {
+  display: flex;
+  flex-wrap: wrap; /* Allows content to wrap if needed */
+  gap: 10px; /* Space between items */
+  justify-content: flex-start; /* Align the content to the left */
+  line-height: 1.5;
+  font-weight: 550;
+  color: #5e6282;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.heroButtons {
+  display: flex;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.findBtn {
+  width: 50%;
+  height: 50px;
+  background-color: #f1a501;
+  color: white;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playDemoBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+}
+
+.playImg {
+  position: relative;
+  top: 5px;
+  z-index: -1;
+}
+
+.heroImg {
+  /* Add any necessary styling for the image container */
+  width: 100%;
+}
+
+/* categroty css starts */
+.categoryContainer {
+  padding: 70px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categoryTitle {
+  font-size: 16px;
+  color: #5e6282;
+  font-weight: 550;
+}
+
+.subText {
+  margin-top: 20px;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.card {
+  border-radius: 26px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+  height: 250px;
+  align-items: center;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Larger, more pronounced shadow */
+  transform: scale(1.15); /* Slightly scale the card up */
+}
+
+.cardImage {
+  width: 80px;
+  height: 80px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cardDescription {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* top selling css starts */
+
+.topSellingContainer {
+  padding: 70px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title of the section */
+.topSellingHeader {
+  font-size: 16px;
+  color: #5e6282;
+  font-weight: 550;
+}
+
+/* Individual Selling Card styles */
+.sellingCard {
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 350px;
+  height: 500px;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 25px 10px rgba(165, 160, 160, 0.3);
+}
+
+/* Card Image Container */
+.sellingCardImage {
+  width: 100%;
+  height: 80%;
+  border-radius: 26px 26px 0px 0px;
+  overflow: hidden;
+}
+
+/* Card Details (Title & Price) */
+.sellingCardDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 20px;
+}
+
+.sellingCardTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sellingCardPrice {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Card Footer (Day & Icon) */
+.sellingCardFooter {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 2px 20px;
+}
+
+/* Easy css Starts here */
+
+/* easy.module.css */
+
+.easycontainer {
+  display: flex;
+  justify-content: center;
+  padding: 70px 120px;
+  width: 100%;
+  gap: 10px;
+}
+
+.easyleft {
+  width: 50%;
+}
+
+.easytext {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5e6282;
+}
+
+.easytextsub {
+  margin-top: 30px;
+}
+
+.easycard {
+  display: flex;
+  gap: 20px;
+  line-height: 1.5;
+  align-items: center;
+  color: #5e6282;
+  padding: 20px 0;
+  width: 55%;
+}
+
+.easycardtext {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.easycarddescription {
+  font-size: 14px;
+}
+
+.easycomponent {
+  width: 370px;
+  height: 370px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 25px -20px 50px 0 rgba(89, 177, 230, 0.6),
+    20px 10px 30px 5px rgba(132, 130, 154, 0.4);
+  position: relative;
+}
+
+.easycomponentheader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.easycomponenttitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.easycomponentsubtitle {
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.easycomponenticons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.easycomponenticons span {
+  font-size: 1rem;
+  color: #777;
+}
+
+.easycomponentfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.easycomponentfooter-text {
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.easycomponentfooterheart {
+  font-size: 1rem;
+  color: #888;
+}
+
+.easycomponentongoing {
+  position: absolute;
+  top: 200px;
+  right: -80px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  width: 250px;
+  box-shadow: 20px 10px 30px 5px rgba(132, 130, 154, 0.4);
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.easycomponentongoing img {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.easycomponentongoingtext {
+  width: 100%;
+}
+
+.easycomponentongoingtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+.easyComp {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.easyMobcomponentongoing {
+  display: none;
+}
+.easycomponentongoingstatus {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+  margin: 4px 0;
+}
+
+.easyprogressbar {
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  height: 10px;
+  margin-top: 8px;
+}
+
+.easyprogressbar > div {
+  width: 40%; /* Adjust the width dynamically based on progress */
+  height: 100%;
+  background-color: #4caf50; /* Green color for the progress bar */
+  border-radius: 5px;
+}
+
+/* testimonial css starts here */
+
+.testiContainer {
+  padding: 70px 120px;
+}
+
+.testiMaxWidthContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.testiSectionTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #5e6282;
+  text-align: left;
+}
+
+.testiTitleWrapper {
+  margin-top: 1.5rem;
+}
+.testiTitle {
+  margin-bottom: 3rem;
+  width: 50%;
+}
+
+.testiGridContainer {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.testiCard {
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.testiInCard {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.testiAuthorImage {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 9999px;
+  margin-right: 1rem;
+}
+
+.testiAuthorName {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.testiAuthorTitle {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.testiQuote {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  color: #334155;
+}
+
+.testiArrowButton {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #797ef6;
+  cursor: pointer;
+}
+
+.testiIndicatorWrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+
+.testiIndicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  margin: 0 0.25rem;
+  cursor: pointer;
+}
+
+.testiActiveIndicator {
+  background-color: #39425d;
+}
+
+.testiInactiveIndicator {
+  background-color: #d1d5db;
+}
+.testiArrowContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.testiMobArrowContainer {
+  display: none;
+}
+/* Mobile Styles */
+
+/* brands css starts */
+
+/* brand.module.css */
+
+/* brand.module.css */
+
+.brandContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 120px;
+  gap: 20px;
+}
+
+.brandCard {
+  width: 250px;
+  height: 100px;
+  padding: 10px;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the card */
+.brandCard:hover {
+  background-color: #fff; /* White background on hover */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Box shadow at the bottom */
+  transform: scale(1.15);
+}
+
+.brandImage {
+  width: 100%;
+  height: 100%;
+  object-fit: fit;
+}
+
+/* subscribe css starts  */
+
+/* sub.module.css */
+
+/* Container for the entire subscription section */
+.subContainer {
+  padding: 70px 120px;
+}
+
+/* Positioning for the background image */
+.subBgContainer {
+  position: relative;
+
+  height: 400px;
+  width: 100%;
+  border-radius: 100px 0px 100px 0px;
+  background-color: #dfd6fa;
+}
+
+/* Positioning and styling for the send icon */
+.subSendIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Main title styling */
+.subTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  color: #5e6282;
+  text-align: center;
+  padding: 18px;
+
+}
+
+/* Container for the email input and subscribe button */
+.subInputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+/* Input field styling */
+.subEmailInputContainer {
+  position: relative;
+  /* top: -5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subEmailInput {
+  background-color: #fff;
+  border: none;
+  color: black;
+  border-radius: 8px;
+  width: 250px;
+  height: 50px;
+  padding-left: 50px;
+}
+
+/* Subscribe button styling */
+.subSubscribeButton {
+  background-color: #ff916c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+
+
+/* footer css starts */
+
+/* footer.module.css */
+
+/* Main container of the footer */
+.footerContainer {
+  background-color: #e5e5e5;
+  padding: 70px 120px;
+}
+
+/* Max width container inside the footer */
+.footerMaxWidthContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Grid layout for footer sections */
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 32px;
+}
+
+/* Footer section title */
+.footerSectionTitle {
+  font-size: 34px;
+  font-weight: 600;
+  color: #080809;
+}
+
+/* Footer section text */
+.footerSectionText {
+  color: #5e6282;
+  font-size: 14px;
+}
+
+/* Footer subheading */
+.footerSubheading {
+  font-size: 18px;
+  font-weight: 550;
+  color: #080809;
+}
+
+/* Links inside each section */
+.footerLinks {
+  color: #5e6282;
+  line-height: 2;
+  margin-top: 15px;
+}
+
+/* Individual link */
+.footerLink {
+  color: #5e6282;
+  display: block;
+}
+
+/* Social icons container */
+.footerSocialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* Social icon link style */
+.footerSocialIconLink {
+  background-color: #edf2f7;
+  border-radius: 9999px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* App download section */
+.footerAppDownloadTitle {
+  font-size: 18px;
+  font-weight: 550;
+  color: #080809;
+  margin-top: 16px;
+}
+
+/* App download icons container */
+.footerAppIcons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* App download icon size */
+.footerAppIcon {
+  height: 32px;
+}
+
+/* Copyright text */
+.footerCopyright {
+  text-align: center;
+  margin-top: 32px;
+}
+
+/* Copyright text styling */
+.footerCopyrightText {
+  color: #5e6282;
+  font-size: 14px;
+}
+
+
+/* Large Desktop */
+@media (min-width: 1441px) {
+  /* styles for large desktops */
+}
+/* Small Desktop / Large Laptop */
+@media (max-width: 1440px) {
+  /* styles for small desktops and large laptops */
+}
+
+/* Large Tablet / Small Desktop */
+@media (max-width: 1280px) {
+  .subContainer {
+    padding: 50px;
+  }
+  .subTitle {
+    padding: 10px;
+  }
+  .cardsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  /* styles for larger tablets / small desktops */
+}
+/* Medium Tablet */
+@media (max-width: 1024px) {
+  .subContainer {
+    padding: 20px;
+  }
+  .brandCard {
+    width: 40%;
+
+    padding: 10px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #fff; /* White background on hover */
+    border-radius: 20px; /* Rounded corners */
+  }
+
+  .brandContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .testiMobArrowContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .testiArrowContainer {
+    display: none;
+  }
+  .testiGridContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .testiContainer {
+    padding: 20px;
+  }
+  .easycard {
+    display: flex;
+    gap: 10px;
+    line-height: 1.5;
+    align-items: center;
+    color: #5e6282;
+    padding: 20px 10px 0px 0px;
+    min-width: 100%;
+  }
+
+  .easycomponent {
+    width: 100%;
+    height: fit-content;
+  }
+  .easycomponentongoing {
+    display: none;
+  }
+  .easyMobcomponentongoing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding: 10px 20px;
+    gap: 20px;
+  }
+  .easycomponentfooter-text {
+    font-size: 0.5rem;
+  }
+
+  .easycontainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .cardsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .topNavContainer {
+    padding: 20px;
+  }
+  .heroContainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .footerContainer{
+    padding: 50px;
+  }
+}
+/* Small Mobile */
+@media (max-width: 768px) {
+  .footerContainer{
+    padding: 20px;
+  }
+  .subBgContainer {
+    position: relative;
+    min-height: 300px;
+    width: 100%;
+    border-radius: 100px 0px 100px 0px;
+    background-color: #dfd6fa;
+  }
+  .subTitle {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #5e6282;
+    padding: 8px;
+    text-align: center;
+  }
+  .subContainer {
+    padding: 20px;
+  }
+  .brandCard {
+    width: 40%;
+
+    padding: 10px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #fff; /* White background on hover */
+    border-radius: 20px; /* Rounded corners */
+  }
+
+  .brandContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .testiMobArrowContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    width: 100%;
+  }
+  .testiArrowContainer {
+    display: none;
+  }
+  .testiInCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .testiCard {
+    padding: 5px;
+  }
+  .testiGridContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .testiTitle {
+    width: 100%;
+  }
+  .testiSectionTitle {
+    font-size: 14px;
+  }
+  .testiContainer {
+    padding: 20px;
+  }
+
+  .testiMaxWidthContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .easycomponentongoingstatus {
+    font-size: 0.7rem;
+  }
+  .easycomponentongoingtitle {
+    font-size: 0.7rem;
+  }
+  .easycomponentongoingstatus {
+    font-size: 0.7rem;
+  }
+  .easycomponentongoing {
+    display: none;
+  }
+  .easyMobcomponentongoing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding: 10px 20px;
+    gap: 20px;
+  }
+  .easycomponentfooter-text {
+    font-size: 0.5rem;
+  }
+
+  .easycomponentfooterheart {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  .easycomponenttitle {
+    font-size: 0.8rem;
+  }
+
+  .easycomponentsubtitle {
+    font-size: 0.6rem;
+  }
+  .easycomponent {
+    width: 100%;
+    height: fit-content;
+  }
+  .easyComp {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .easycontainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .easyleft {
+    width: 100%;
+  }
+  .easycard {
+    width: 100%;
+  }
+  .cardsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .topNavContainer {
+    padding: 15px;
+  }
+  .mobTopNav {
+    display: flex;
+  }
+  .topNav {
+    display: none; /* Hide topNav for small screens */
+  }
+
+  .sidebar {
+    display: flex; /* Sidebar is hidden by default */
+  }
+
+  .sidebar.open {
+    display: flex;
+  }
+  .heroContainer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .heroContent {
+    margin-top: 0px;
+  }
+  .heroTitle {
+    font-size: 14px;
+  }
+  .heroTextImg {
+    margin-top: 10px;
+  }
+  .heroDescription {
+    font-size: 12px;
+  }
+  .heroImg {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .footerContainer{
+    padding: 10px;
+  }
+  .subInputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    gap: 20px;
+  }
+  .subBgContainer {
+    position: relative;
+
+    min-height: 400px;
+    width: 100%;
+    border-radius: 100px 0px 100px 0px;
+    background-color: #dfd6fa;
+  }
+  .subTitle {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #5e6282;
+    padding: 0px;
+    text-align: center;
+  }
+  .subContainer {
+    padding: 20px;
+  }
+  .brandCard {
+    width: 40%;
+
+    padding: 10px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #fff; /* White background on hover */
+    border-radius: 20px; /* Rounded corners */
+  }
+
+  .brandContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .testiMobArrowContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    width: 100%;
+  }
+  .testiArrowContainer {
+    display: none;
+  }
+  .testiInCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .testiCard {
+    padding: 5px;
+  }
+  .testiGridContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .testiTitle {
+    width: 100%;
+  }
+  .testiSectionTitle {
+    font-size: 14px;
+  }
+  .testiContainer {
+    padding: 20px;
+  }
+
+  .testiMaxWidthContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .easycomponentongoingstatus {
+    font-size: 0.7rem;
+  }
+  .easycomponentongoingtitle {
+    font-size: 0.7rem;
+  }
+  .easycomponentongoingstatus {
+    font-size: 0.7rem;
+  }
+  .easycomponentongoing {
+    display: none;
+  }
+  .easyMobcomponentongoing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding: 10px 20px;
+    gap: 20px;
+  }
+  .easycomponentfooter-text {
+    font-size: 0.5rem;
+  }
+
+  .easycomponentfooterheart {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  .easycomponenttitle {
+    font-size: 0.8rem;
+  }
+
+  .easycomponentsubtitle {
+    font-size: 0.6rem;
+  }
+  .easycomponent {
+    width: 100%;
+    height: fit-content;
+  }
+  .easyComp {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .easycontainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .easyleft {
+    width: 100%;
+  }
+  .easycard {
+    width: 100%;
+  }
+
+  .topSellingContainer {
+    padding: 20px;
+  }
+  .cardsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .categoryContainer {
+    padding: 20px;
+  }
+
+  .categoryTitle {
+    font-size: 14px;
+  }
+
+  .subText {
+    margin-top: 10px;
+  }
+  .topNavContainer {
+    padding: 15px;
+  }
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  .heroContent {
+    margin-top: 0px;
+  }
+  .heroTitle {
+    font-size: 14px;
+  }
+  .heroTextImg {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .heroDescription {
+    font-size: 10px;
+  }
+  .heroImg {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
